@@ -12,25 +12,27 @@ export default function SignUpForm() {
   const getButtonClasses = (type) => {
     const isActive = selectedUser === type;
     return `relative flex items-center gap-2 px-4 py-2 border  font-medium transition duration-200  ${
-      isActive ? 'border-purple-600 bg-purple-100 text-purple-700  h-[80px] rounded-md ' : 'border-gray-300 bg-white text-gray-500  h-[80px] rounded-md'
+      isActive ? 'border-purple-600 bg-purple-100 text-purple-700  h-[80px] rounded-md w-[150px]' : 'border-gray-300 bg-white text-gray-500  h-[80px] rounded-md sm:w-[150px]'
     }`;
   };
 
   return (
     <div className=" items-center justify-center bg-white ">
-      <div className="max-w-md w-full gap-10">
-        <p className="text-sm text-[#686868] text-center pt-15 ml-50 ">Sign up for free!</p>
-        <h2 className="text-3xl text-center ml-60 text-[#1E1E4B]">Get started</h2>
- 
+      <div className="max-w-md  gap-10">
+        <div className=" justify-center items-center gap-2 pt-15">
+  <p className="text-sm text-[#686868] sm:ml-85">Sign up for free!</p>
+  <h2 className="text-3xl text-[#1E1E4B] sm:ml-75">Get started</h2>
+</div>
+
         {/* Toggle Buttons */}
-        <div className="flex  gap-5 mt-4 ml-69  w-[900px]">
+        <div className="flex flex-col lg:flex-row  gap-5 mt-4 sm:ml-115 mx-auto mb-4 lg:w-[400px] w-[150px]">
           <button
             onClick={() => setSelectedUser('regular')}
             className={getButtonClasses('regular')}
           >
             <FaUser /> Regular user
             {selectedUser === 'regular' && (
-              <span className="absolute left-34 mb-18 transform rounded-3xl  -translate-y-1/2 bg-[#532F82] text-white">
+              <span className="absolute left-35 mb-18 transform rounded-3xl  -translate-y-1/2 bg-[#532F82] text-white">
                 <FiCheck size={18} />
               </span>
             )}
@@ -42,37 +44,38 @@ export default function SignUpForm() {
           >
             <FaStore /> Service provider
             {selectedUser === 'provider' && (
-              <span className="absolute left-41 mb-18 transform rounded-3xl  -translate-y-1/2 bg-[#532F82] text-white">
+              <span className="absolute left-33 mb-18 transform rounded-3xl  -translate-y-1/2 bg-[#532F82] text-white">
                 <FiCheck size={20} />
               </span>
             )}
           </button>
         </div>
       </div>
-         <form>
-                <label className='text-[#603F8B] block text-[18px] mt-15 text-center mr-180 '>Full name  </label>
-        <input type="text" className='w-[486px] h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
-        focus:ring-2 focus:ring-[#E7EAF1] ml-69 ' /> 
-               <label className='text-[#603F8B] block text-[18px] mt-3 text-center mr-189 '>Email  </label>
-        <input type="text" className='w-[486px] h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
-        focus:ring-2 focus:ring-[#E7EAF1] ml-69 ' /> 
+         <form className=' mx-auto max-w-[400px]'>
+                <label className='text-[#603F8B]  text-[18px] mt-15 text-center sm:mr-180 '>Full name  </label>
+        <input type="text" className='w-full h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
+        focus:ring-2 focus:ring-[#E7EAF1] ' /> 
+               <label className='text-[#603F8B]  text-[18px] mt-3 text-center sm:mr-189 '>Email  </label>
+        <input type="text" className='w-full h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
+        focus:ring-2 focus:ring-[#E7EAF1]  ' /> 
 
-         <label className='text-[#603F8B] block text-[18px] mt-3 text-center mr-169 '>Phone number  </label>
-        <input type="text" className='w-[486px] h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
-        focus:ring-2 focus:ring-[#E7EAF1] ml-69 ' /> 
+         <label className='text-[#603F8B]  text-[18px] mt-3 text-center sm:not-last:sm:mr-169 '>Phone number  </label>
+        <input type="text" className='w-full h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
+        focus:ring-2 focus:ring-[#E7EAF1]  ' /> 
                
                <div className='relative'>
-                <label className='text-[#603F8B] block text-[18px] mt-3 text-center mr-180 '>Password </label>
+                <label className='text-[#603F8B] text-[18px] mt-3 text-center sm:mr-180 '>Password </label>
        
                </div>
                 <Eye2 />
+                 </form>
 
                   <label className="flex items-center space-x-2 cursor-pointer">
       <input
         type="checkbox"
         checked={agreed}
         onChange={() => setAgreed(!agreed)}
-        className="ml-69 mt-4  appearance-none w-4 h-4 border-2 border-[#A16AE8]  cursor-pointer rounded-sm checked:text-black checked:border-black focus:outline-none relative"
+        className="sm:ml-120 mt-4  appearance-none w-4 h-4 border-2 border-[#A16AE8]  cursor-pointer rounded-sm checked:text-black checked:border-black focus:outline-none relative"
       />
       <span className="text-sm text-gray-700 mt-4">
         I agree to Dutiful’s{' '}
@@ -81,14 +84,16 @@ export default function SignUpForm() {
         </a>
       </span>
     </label>
-
-      <button className='bg-[#532F82] ml-69  mt-15 rounded-md  w-[486px] h-[78px] shadow-lg text-white cursor-pointer'>Sign Up </button>
+      <div className='mx-auto max-w-[400px]'>
+     <button className='bg-[#532F82]  mt-15 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>Sign Up </button>
+      </div>
+    
            
-           <p className='text-[#a3B1C7] text-center mr-75 mt-6 mb-40'>Already have an account? 
+           <p className='text-[#a3B1C7] text-center mr-20 mt-6 mb-40'>Already have an account? 
             <Link className=' text-[#6a518f] ' to="/login" >Login</Link>
            </p>
 
-         </form>
+        
     </div>
   );
 }

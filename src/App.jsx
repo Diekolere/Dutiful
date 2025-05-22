@@ -16,7 +16,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+         <Navbar /> 
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Navigate to="/home" replace />} />
@@ -31,7 +31,7 @@ export default function App() {
              <Route path="/signup" element={<SignUpPage/>}/>
           </Routes>
         </main>
-        <Footer />
+         <Footer /> 
       </div>
     </BrowserRouter>
   );

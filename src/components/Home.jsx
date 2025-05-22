@@ -2,49 +2,46 @@ import React from 'react'
 
 export default function Home(){
     return(
-        <div>
-          <div className='flex gap-20'>
-         < div className='mt-50 ml-18 gap-15' >
-        <p className='font-semibold text-3xl text-[#230B34]'>List and grow your business <br />
+        <div  >
+            <div className='flex flex-col lg:flex-row gap-15 '>
+      < div className=' sm:mt-50 mt-8 sm:ml-18 gap-15 ' >
+        <p className='font-semibold text-3xl  text-[#230B34]'>List and grow your business <br />
             with just few clicks</p>
-         <p className='mt-3 text-[#383838]'> Eliminate manual work and save time by listing your business <br />
+         <p className='mt-3  text-[#383838]'> Eliminate manual work and save time by listing your business <br />
              or service on the best business directory in Nigeria.
         </p>   
          </div>
-         <img src="/image/Group 698.svg" alt="Blogger" className='w-[674px] h-[563px] mt-10' />
-        </div>
+         <img src="/image/Group 698.svg" alt="Blogger" className=' md:w-[267px] lg:w-[674px] h-[563px] md:-mt-0 -mt-25' />
+        </div>  
 
-       {/* the next image part */}
-          <div className='flex'>
+       
+          <div className='flex flex-col-reverse lg:flex-row '>
             <img src="/image/Group 5018.svg" alt="" className='w-[592.87px] h-[579.5px]' />
-            <div  >
-            <p className='mt-50 ml-22 gap-15 font-semibold text-[#1E1E4B] text-4xl' > 
-                Collect reviews and ratings <br />
-                 from customers
+           <div   >
+            <p className='lg:mt-50 sm:ml-22 sm:text-3xl  text-2xl font-semibold text-[#1E1E4B]lg:text-4xl' > 
+               <span className="block lg:inline">Collect reviews and ratings</span> <br className="hidden lg:inline" />
+              <span className="block lg:inline">from customers</span>    
             </p>
-            <p className='ml-22 mt-2 text-[#656565]'>
-                Accelerate your business reputation by 90% and gain social <br />
-                 proof through reviews and ratings requested from customers.
+            <p className='sm:ml-22 mt-2 text-[#656565] '>
+              <span className="block lg:inline">Accelerate your business reputation by 90% and gain social </span><br className='hidden lg:inline' />
+             <span classNmae='block lg:inline'>  proof through reviews and ratings requested</span><br className='hidden lg:inline' />
+                <span className='block lg:inline'> from customers.</span>
             </p>
-            </div>
+            </div> 
           </div>
+      
 
-          {/* The third part */}
-           <div className="flex flex-col md:flex-row items-center justify-center py-16 px-6 md:px-2 bg-[#FCFAFF]">
-      {/* Left Side (Image Placeholder) */}
-      <div className="w-full md:w-1/2 flex justify-center relative">
-        <div className="bg-[#532F82] rounded-[30px] w-[638px] h-[441px]  flex items-center justify-center shadow-lg">
-          {/* Replace with actual image */}
-          
-            <img src="/image/Listing mockup 1.png" alt="Phone"  className='w-[1291.08px] h-[622px]'/>
-          
-        </div>
-      </div>
+           
+           <div className="flex items-center  justify-center py-16 px-6 md:px-2 bg-[#FCFAFF]">
+      
+          <div className="w-full  flex justify-center relative">
+         <div className="bg-[#532F82] rounded-[30px] h-[300px]  lg:w-[638px] lg:h-[441px]  flex items-center justify-center shadow-lg">
+          <img src="/image/Listing mockup 1.png" alt="Phone"  className='lg:w-[1291.08px] w-[500px] h-[451px] lg:h-[622px]'/>
+          </div>
+       </div> 
 
-      {/* Right Side (Features) */}
-      <div className="w-full md:w-1/2 mt-10 md:mt-0 md:ml-4 space-y-8">
-        {/* Feature 1 */}
-        <div className="items-start gap-4 border-[#EEEEFF] border-2 rounded-3xl p-4 mr-20 bg-white">
+      <div className="w-full flex-col  md:ml-4 space-y-8">
+        <div className="items-start gap-4 border-[#EEEEFF] border-2 rounded-3xl  p-4 mr-20 bg-white">
             <img src="/image/discover.png" alt="" />
           <div>
             <h3 className="text-lg font-semibold text-[#464646]">Get Discovered</h3>
@@ -57,7 +54,6 @@ export default function Home(){
           </div>
         </div>
     
-        {/* Feature 2 */}
           <div className=" items-start gap-4 border-[#EEEEFF] border-2 rounded-3xl p-4 mr-20 absolute left-140 bg-white w-[480px]">
           <img src="/image/messages.png" alt="" />
           <div>
@@ -69,7 +65,7 @@ export default function Home(){
           </div>
         </div>
 
-        {/* Feature 3 */}
+        
         <div className="items-start gap-4 border-[#EEEEFF] border-2 rounded-3xl p-4 mr-20 bg-white mt-60">
          <img src="/image/note-2.png" alt="" />
           <div>
@@ -85,8 +81,10 @@ export default function Home(){
       </div>
     </div>
 
-    {/* the last image section */}
-        <div className='flex'>
+        
+
+    
+         <div className='flex flex-col-reverse lg:flex-row'>
             <img src="/image/Frame 5018.svg" alt="" className='w-[521px] h-[477px] ml-20 mt-20' />
             <div  >
             <p className='mt-50 ml-22 gap-15 font-semibold text-[#1E1E4B] text-4xl' > 
@@ -98,7 +96,7 @@ export default function Home(){
                   your booking page.
             </p>
             </div>
-          </div>
+          </div> 
         </div>
        
         

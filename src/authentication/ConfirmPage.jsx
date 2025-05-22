@@ -46,20 +46,26 @@ export default function PinInput() {
           ref={(el) => (inputRefs.current[index] = el)}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          className={`w-[75px] h-[75px] text-center text-2xl rounded-md border ${
+          className={`w-[70px] h-[75px] text-center text-2xl rounded-md border ${
             digit ? 'border-[#B6B6E5]' : 'border-[#B6B6E5]'
           } focus:outline-none focus:border-[#B6B6E5]`}
         />
       ))}
     </div>
-          <p className='ml-130 mt-5 text-[#686868]'>Enter OTP code that was sent to your email, <br/>
-               <span className='ml-20'> segunsolaru@gmail.com.</span></p>
+         <p className=" sm:ml-101 mt-5 text-[#686868] text-sm sm:text-base sm:inline-block text-center sm:text-left">
+  Enter OTP code that was sent to your email,
+  <span className="block sm:inline"> segunsolaru@gmail.com.</span>
+</p>
 
-                  <button className='bg-[#532F82] ml-112  mt-8 rounded-md  w-[489px] h-[78px] shadow-lg text-white cursor-pointer'>
+          
+          <div className="max-w-[600px] mx-auto">
+               <button className='bg-[#532F82]  mt-8 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>
          <Link to="/reset" >
             Confirm OTP
             </Link>
             </button>
+          </div>
+            
 
              <p className='text-[#a3B1C7] text-center ml-8 mt-3 mb-40'>Didn't get a code? 
                         <Link className=' text-[#6a518f]  ' to="/reset" >Resend</Link>

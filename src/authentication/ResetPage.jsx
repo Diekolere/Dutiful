@@ -5,22 +5,22 @@ import {Link} from 'react-router-dom'
 export default function ResetPage(){
     return(
       <div>
-         <p className='text-center mr-57 mt-18 text-3xl text-[#1E1E4B] '> Reset Password</p>
-            <p className='text-center  mt-2 mr-65 text-base text-[#686868]'>Set your new password <br/>
+         <p className='text-center sm:mr-57 sm:ml-115 mt-18 text-3xl text-[#1E1E4B] sm:inline-block '> Reset Password</p>
+            <p className='text-center  mt-2 sm:mr-65 sm:ml-20 mb-4  text-base text-[#686868] sm-inline-block'>Set your new password 
             </p>
 
-            <form>
-              <label className='text-[#603F8B] block text-[18px] mt-10 text-center mr-49'>Enter new password </label>
+            <form className=' mx-auto max-w-[400px] gap-20'>
+              <label className='text-[#603F8B]  text-[18px] mt-10 mb-4 text-center sm:mr-49'>Enter new password </label>
               <Eye />
-               <label className='text-[#603F8B] block text-[18px] mt-5 mr-43 text-center '>Re-enter new password  </label>
+               <label className='text-[#603F8B]  text-[18px] mt-15 sm:mr-43 text-center '>Re-enter new password  </label>
               
                  <Eye />
-          
-           </form>
-              <button className='bg-[#532F82] ml-125  mt-20 rounded-md  w-[486px] h-[78px] shadow-lg text-white cursor-pointer'>Reset Password </button>
-          <p className='text-[#a3B1C7] text-center ml-25 mt-6 mb-40'>Or 
+                   <button className='bg-[#532F82]   mt-20 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>Reset Password </button>
+          <p className='text-[#a3B1C7] text-center ml-15 mt-6 mb-40'>Or 
             <Link className=' text-[#6a518f] ml-2' to="/signup" >Create an account</Link>
            </p>
+           </form>
+         
     </div>
     )
     
