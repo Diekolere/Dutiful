@@ -122,10 +122,10 @@ export default function NavBar() {
               </div>
             ) : (
               <div className="mt-6 flex flex-col gap-y-4">
-                <Link to="/login" className=" border-gray-50 border-2 rounded-md  w-30 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
+                <Link to="/login" className=" border-gray-50 border-2 hover:bg-[#c8b0ce] rounded-md  w-55 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
                   Login
                 </Link>
-                <Link to="/signup" className=" border-gray-50 border-2 rounded-md  w-30 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
+                <Link to="/signup" className=" border-gray-50 border-2 rounded-md  hover:bg-[#c8b0ce] w-55  h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
                   Sign up
                 </Link>
               </div>
