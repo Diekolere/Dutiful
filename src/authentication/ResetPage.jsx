@@ -9,7 +9,7 @@ export default function ResetPage(){
             <p className='text-center  mt-2 sm:mr-65 sm:ml-20 mb-4  text-base text-[#686868] sm-inline-block'>Set your new password 
             </p>
 
-            <form className=' mx-auto max-w-[400px] gap-20'>
+            <form className=' mx-auto max-w-[400px] gap-20 px-4'>
               <label className='text-[#603F8B]  text-[18px] mt-10 mb-4 text-center sm:mr-49'>Enter new password </label>
               <Eye />
                <label className='text-[#603F8B]  text-[18px] mt-15 sm:mr-43 text-center '>Re-enter new password  </label>

@@ -28,7 +28,7 @@ export default function ForgotPage() {
      <p className="text-center mt-2 sm:ml-113 text-[#686868] sm:text-base text-sm sm:whitespace-normal whitespace-pre-line sm:inline">
   Enter your email and we’ll send you a mail on how to reset your password.
 </p>
-      <form className='mx-auto w-full max-w-[500px]' onSubmit={handleSubmit}>
+      <form className='mx-auto w-full max-w-[500px] px-4' onSubmit={handleSubmit}>
         <label className='text-[#603F8B] block text-[18px] mt-10 text-center mr-99'>Email</label>
         <div className="relative h-[60px] mt-3">
           <img

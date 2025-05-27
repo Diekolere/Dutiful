@@ -33,10 +33,12 @@ export default function Login() {
 
   return (
     <div>
-      <p className='mt-15 text-center sm:mr-62 mr-59 text-[#686868]'>Jump right back in</p>
-      <p className='mt-3 text-center mr-75 font-bold text-[30px] text-[#1E1E4B]'>Login</p>
+      <div className='flex flex-col '>
+       <p className='mt-15 text-center  text-[#686868]'>Jump right back in</p>
+      <p className='mt-3 text-center  font-bold text-[30px] text-[#1E1E4B]'>Login</p>
+      </div>
 
-      <form className='mx-auto max-w-[400px]' onSubmit={handleSubmit}>
+      <form className='mx-auto max-w-[400px] px-6  py-6' onSubmit={handleSubmit}>
         {/* Email */}
         <label className='text-[#603F8B] block text-[18px] mt-6 text-center sm:mr-80 mr-70'>Email</label>
         <input
@@ -59,7 +61,7 @@ export default function Login() {
         {/* Login Button */}
         <button
           type="submit"
-          className='bg-[#532F82] mt-15 rounded-md w-full h-[78px] shadow-lg text-white cursor-pointer'>
+          className='bg-[#532F82] mt-15 rounded-md w-full h-[65px] shadow-lg text-white cursor-pointer'>
           Login
         </button>
 

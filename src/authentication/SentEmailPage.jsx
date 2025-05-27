@@ -9,8 +9,8 @@ export default function SentEmailPage(){
   An OTP code has been sent to segunsolaru@gmail.com. 
   <span className="block sm:inline">Check your email to get the code.</span>
 </p>
-               <div className='mx-auto max-w-[600px]'>
-           <button className='bg-[#532F82]  mb-40  mt-8 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>
+               <div className='mx-auto max-w-[600px] px-4'>
+           <button className='bg-[#532F82]  mb-40  mt-8 rounded-md  w-full h-[65px] shadow-lg text-white cursor-pointer'>
           <Link to="/confirm" >
             Next
             </Link>

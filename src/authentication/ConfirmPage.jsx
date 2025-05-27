@@ -46,7 +46,7 @@ export default function PinInput() {
           ref={(el) => (inputRefs.current[index] = el)}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          className={`w-[70px] h-[75px] text-center text-2xl rounded-md border ${
+          className={`max-w-[65px] w-full h-[69px] text-center text-2xl rounded-md border  ${
             digit ? 'border-[#B6B6E5]' : 'border-[#B6B6E5]'
           } focus:outline-none focus:border-[#B6B6E5]`}
         />
@@ -58,8 +58,8 @@ export default function PinInput() {
 </p>
 
           
-          <div className="max-w-[600px] mx-auto">
-               <button className='bg-[#532F82]  mt-8 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>
+          <div className="max-w-[500px] mx-auto px-4 ">
+               <button className='bg-[#532F82]  mt-8 rounded-md  w-full h-[65px] shadow-lg text-white cursor-pointer'>
          <Link to="/reset" >
             Confirm OTP
             </Link>

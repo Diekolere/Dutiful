@@ -12,9 +12,9 @@ export default function Business() {
     </div>
       
 
-      <div className="max-w-[1200px] flex flex-col lg:flex-row justify-center  gap-10 relative z-10 ">
+      <div className="max-w-[1500px] flex flex-col lg:flex-row justify-center px-6 items-center  gap-10 relative z-10 ">
         {/* Business 1 */}
-        <div className="p-4 bg-white h-[197px] w-full border-[#EEEEFF] rounded-md shadow-md">
+        <div className=" bg-white h-[220px] w-full border-[#EEEEFF] rounded-md shadow-md p-4">
           <div className="flex gap-2">
             <img src="/image/sms-tracking.svg" alt="Tracking icon" className="ml-6" />
             <p className="text-[#1E1E4B] font-bold text-2xl mt-2">Customer support</p>
@@ -25,7 +25,7 @@ export default function Business() {
         </div>
 
         {/* Business 2 */}
-        <div className="p-4 bg-white h-[197px] w-full border-[#EEEEFF] rounded-md shadow-md">
+        <div className=" bg-white h-[220px] w-full border-[#EEEEFF] rounded-md shadow-md p-4">
           <div className="flex gap-2">
             <img src="/image/map.png" alt="Tracking icon" className="ml-6" />
             <p className="text-[#1E1E4B] font-bold text-2xl mt-2">Business address</p>
@@ -37,7 +37,7 @@ export default function Business() {
           </p>
         </div>
 
-         <div className="p-4 bg-white h-[197px] w-full border-[#EEEEFF] rounded-md shadow-md">
+         <div className=" bg-white h-[220px] w-full border-[#EEEEFF] rounded-md shadow-md p-4">
           <div className="flex gap-2">
             <img src="/image/call-calling.png" alt="Tracking icon" className="ml-6" />
             <p className="text-[#1E1E4B] font-bold text-2xl mt-2">Phone number</p>
@@ -49,7 +49,7 @@ export default function Business() {
       </div>
 
 
-      <form className=' mt-15 gap-8 mx-auto max-w-[600px]' >
+      <form className=' mt-15 gap-8 mx-auto max-w-[600px] px-4' >
         <label className='text-[#603F8B] block text-[18px] '>Full name </label>
         <input type="text" className='w-full h-[64px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
         focus:ring-2 focus:ring-[#E7EAF1] ' /> 
@@ -78,7 +78,7 @@ export default function Business() {
         <input type="text" className='w-full h-[131px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
         focus:ring-2 focus:ring-[#E7EAF1] ' /> 
 
-         <button className='bg-[#532F82]  mb-40 mt-15 rounded-md  w-full h-[50px] lg:h-[78px] shadow-lg text-white cursor-pointer'>Send message</button>
+         <button className='bg-[#532F82]  mb-40 mt-15 rounded-md  w-full h-[50px] lg:h-[65px] shadow-lg text-white cursor-pointer'>Send message</button>
       </form>
     </div>
   );

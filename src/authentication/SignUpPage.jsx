@@ -18,14 +18,14 @@ export default function SignUpForm() {
 
   return (
     <div className=" items-center justify-center bg-white ">
-      <div className="max-w-md  gap-10">
-        <div className=" justify-center items-center gap-2 pt-15">
-  <p className="text-sm text-[#686868] sm:ml-85">Sign up for free!</p>
-  <h2 className="text-3xl text-[#1E1E4B] sm:ml-75">Get started</h2>
+      <div className="max-w-md mx-auto  gap-10">
+        <div className=" flex flex-col w-full justify-center items-center gap-2 pt-15">
+  <p className="text-sm text-[#686868]">Sign up for free!</p>
+  <h2 className="text-3xl text-[#1E1E4B] ">Get started</h2>
 </div>
 
         {/* Toggle Buttons */}
-        <div className="flex flex-col lg:flex-row  gap-5 mt-4 sm:ml-115 mx-auto mb-4 lg:w-[400px] w-[150px]">
+        <div className="flex flex-col lg:flex-row  gap-5 mt-4  mx-auto mb-4 lg:w-[400px] w-[150px]">
           <button
             onClick={() => setSelectedUser('regular')}
             className={getButtonClasses('regular')}
@@ -51,7 +51,7 @@ export default function SignUpForm() {
           </button>
         </div>
       </div>
-         <form className=' mx-auto max-w-[400px]'>
+         <form className=' mx-auto max-w-[400px] px-10  py-10 '>
                 <label className='text-[#603F8B]  text-[18px] mt-15 text-center sm:mr-180 '>Full name  </label>
         <input type="text" className='w-full h-[60px]  mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none
         focus:ring-2 focus:ring-[#E7EAF1] ' /> 
@@ -70,7 +70,7 @@ export default function SignUpForm() {
                 <Eye2 />
                  </form>
 
-                  <label className="flex items-center space-x-2 cursor-pointer">
+                  <label className="flex items-center space-x-2 cursor-pointer px-10  py-10 ">
       <input
         type="checkbox"
         checked={agreed}
@@ -84,12 +84,12 @@ export default function SignUpForm() {
         </a>
       </span>
     </label>
-      <div className='mx-auto max-w-[400px]'>
-     <button className='bg-[#532F82]  mt-15 rounded-md  w-full h-[78px] shadow-lg text-white cursor-pointer'>Sign Up </button>
+      <div className='mx-auto max-w-[400px] pl-7 pr-7'>
+     <button className='bg-[#532F82]  mt-15 rounded-md  w-full h-[72px] shadow-lg text-white cursor-pointer '>Sign Up </button>
       </div>
     
            
-           <p className='text-[#a3B1C7] text-center mr-20 mt-6 mb-40'>Already have an account? 
+           <p className='text-[#a3B1C7] text-center mr-20 mt-6 mb-40 py-10  '>Already have an account? 
             <Link className=' text-[#6a518f] ' to="/login" >Login</Link>
            </p>
 
