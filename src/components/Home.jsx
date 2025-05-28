@@ -85,12 +85,12 @@ export default function Home(){
 
     
         <div className='flex flex-col-reverse lg:flex-row'>
-  <div className="px-4 lg:px-0 w-full">
-    <img src="/image/Frame 5018.svg" alt="" className='w-full h-[477px] mt-20' />
+  <div className="px-4 lg:px-0  w-full">
+    <img src="/image/Frame 5018.svg" alt="" className='w-full h-[477px] lg:mt-20 mt-0' />
   </div>
 
   <div>
-    <p className='mt-50 gap-15 font-semibold text-[#1E1E4B] text-4xl ml-3'>
+    <p className='lg:mt-50 mt-0  gap-15 font-semibold text-[#1E1E4B] text-4xl ml-3'>
       Accept and sell appointments
     </p>
     <p className='ml-1 mt-2 text-[#656565]'>

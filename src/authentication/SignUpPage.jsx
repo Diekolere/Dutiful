@@ -75,9 +75,9 @@ export default function SignUpForm() {
         type="checkbox"
         checked={agreed}
         onChange={() => setAgreed(!agreed)}
-        className="sm:ml-120 mt-4  appearance-none w-4 h-4 border-2 border-[#A16AE8]  cursor-pointer rounded-sm checked:text-black checked:border-black focus:outline-none relative"
+        className="sm:ml-120 mb-0 mt-0 appearance-none w-4 h-4 border-2 border-[#A16AE8]  cursor-pointer rounded-sm checked:text-black checked:border-black focus:outline-none relative"
       />
-      <span className="text-sm text-gray-700 mt-4">
+      <span className="text-sm text-gray-700 mt-0">
         I agree to Dutiful’s{' '}
         <a href="#" className="text-purple-500 underline hover:text-purple-600">
           terms and conditions
@@ -85,7 +85,7 @@ export default function SignUpForm() {
       </span>
     </label>
       <div className='mx-auto max-w-[400px] pl-7 pr-7'>
-     <button className='bg-[#532F82]  mt-15 rounded-md  w-full h-[72px] shadow-lg text-white cursor-pointer '>Sign Up </button>
+     <button className='bg-[#532F82]  rounded-md  w-full h-[72px] shadow-lg text-white cursor-pointer '>Sign Up </button>
       </div>
     
            
