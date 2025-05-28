@@ -4,8 +4,8 @@ export default function FeaturesPage () {
     return(
         <div className='mx-auto'>
             <div>
-                <p className='font-semibold text-[#1E1E4B] text-center mt-2  text-4xl lg:text-4xl'>Plans to Suit Your Business Budget</p>
-             <p className='text-center font-base mt-2 text-[#1e1e4b]'>Our fully organized plans deliver valuable content that showcases your services and skills, drives <br />
+                <p className='font-semibold text-[#1E1E4B] text-center mt-4  text-3xl  lg:text-4xl'>Plans to Suit Your Business Budget</p>
+             <p className='text-center font-base mt-3 text-[#1e1e4b]'>Our fully organized plans deliver valuable content that showcases your services and skills, drives <br />
                 Lead, covers all features, and gives customers a clear idea to be able to choose your services.</p>
             </div>
 
