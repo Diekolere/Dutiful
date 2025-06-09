@@ -35,7 +35,7 @@ export default function PinInput() {
 
   return (
     <div>
- <div className="flex gap-4 justify-center mt-20">
+ <div className="flex gap-4 justify-center mt-40">
       {pin.map((digit, index) => (
         <input
           key={index}
@@ -46,15 +46,15 @@ export default function PinInput() {
           ref={(el) => (inputRefs.current[index] = el)}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          className={`max-w-[65px] w-full h-[69px] text-center text-2xl rounded-md border  ${
+          className={`max-w-[65px] w-full h-[69px] text-center bg-[#F3F3F3] text-2xl rounded-lg border  ${
             digit ? 'border-[#B6B6E5]' : 'border-[#B6B6E5]'
-          } focus:outline-none focus:border-[#B6B6E5]`}
+          } border-2 border-[#B6B6E5]`}
         />
       ))}
     </div>
-         <p className=" sm:ml-101 mt-5 text-[#686868] text-sm sm:text-base sm:inline-block text-center sm:text-left">
-  Enter OTP code that was sent to your email,
-  <span className="block sm:inline"> segunsolaru@gmail.com.</span>
+         <p className=" sm:ml-101 lg:pl-30 mt-5 text-[#686868] text-sm sm:text-base sm:inline-block text-center sm:text-left">
+  Enter OTP code that was sent to your email,<br/>
+  <span className="block sm:inline lg:pl-12 "> segunsolaru@gmail.com.</span>
 </p>
 
           

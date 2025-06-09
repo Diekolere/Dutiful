@@ -3,29 +3,29 @@ import React from 'react'
 export default function Home(){
     return(
         <div  >
-            <div className='flex flex-col lg:flex-row gap-15 '>
+            <div className='flex flex-col lg:flex-row gap-25 '>
       < div className=' sm:mt-50 mt-8 sm:ml-18 gap-15 px-4 ' >
-        <p className='font-semibold text-3xl  text-[#230B34]'>List and grow your business <br />
+        <p className='font-semibold text-3xl lg:text-[34px]  text-[#230B34]'>List and grow your business <br />
             with just few clicks</p>
-         <p className='mt-3  text-[#383838]'> Eliminate manual work and save time by listing your business <br />
+         <p className='mt-3  text-[#383838] lg:text-[15px]'> Eliminate manual work and save time by listing your business <br />
              or service on the best business directory in Nigeria.
         </p>   
          </div>
-         <div className='px-4 lg:px-0'>
-      <img src="/image/Group 698.svg" alt="Blogger" className=' md:w-[267px] lg:w-[674px] h-[563px] md:-mt-0 -mt-25' />
+         <div className='px-4 lg:px-0 lg:pt-8'>
+      <img src="/image/Group 698.svg" alt="Blogger" className=' md:w-[267px] lg:w-[704px] h-[563px] md:-mt-0 -mt-25' />
          </div>
         
         </div>  
 
        
-          <div className='flex flex-col-reverse lg:flex-row '>
-            <img src="/image/Group 5018.svg" alt="" className='w-[592.87px] h-[579.5px]' />
+          <div className='flex flex-col-reverse lg:flex-row   '>
+            <img src="/image/Group 5018.svg" alt="" className='w-[592.87px] h-[579.5px] lg:w-[690px]' />
            <div  className='px-4' >
-            <p className='lg:mt-50 sm:ml-22 sm:text-3xl  text-2xl font-semibold text-[#1E1E4B]lg:text-4xl' > 
+            <p className='lg:mt-50 sm:ml-15 sm:text-3xl  text-2xl font-semibold text-[#1E1E4B]lg:text-4xl' > 
                <span className="block lg:inline">Collect reviews and ratings</span> <br className="hidden lg:inline" />
               <span className="block lg:inline">from customers</span>    
             </p>
-            <p className='sm:ml-22 mt-2 text-[#656565] '>
+            <p className='sm:ml-15 mt-2 text-[#656565] '>
               <span className="block lg:inline">Accelerate your business reputation by 90% and gain social </span><br className='hidden lg:inline' />
              <span classNmae='block lg:inline'>  proof through reviews and ratings requested</span><br className='hidden lg:inline' />
                 <span className='block lg:inline'> from customers.</span>
@@ -35,10 +35,10 @@ export default function Home(){
       
 
            
-          <div className="flex flex-col md:flex-row items-center justify-center py-16 px-6 md:px-2 bg-[#FCFAFF]">
+          <div className="flex flex-col md:flex-row lg:w-[1200px] lg:h-[800px] mx-auto rounded-4xl lg:pl-30 items-center justify-center py-16 px-6 md:px-2 bg-[#FCFAFF]">
   
   <div className="w-full flex justify-center relative px-4  lg:px-6">
-    <div className="bg-[#532F82] rounded-[30px] h-[300px] mb-3 lg:w-[638px] lg:h-[441px] flex items-center justify-center shadow-lg">
+    <div className="bg-[#532F82] rounded-[30px] h-[300px] mb-3 lg:w-[550px] lg:h-[541px] flex items-center justify-center shadow-lg">
       <img src="/image/Listing mockup 1.png" alt="Phone" className="lg:w-[1291.08px] w-[600px] h-[401px] lg:h-[622px]" />
     </div>
   </div> 
@@ -86,14 +86,14 @@ export default function Home(){
     
         <div className='flex flex-col-reverse lg:flex-row'>
   <div className="px-4 lg:px-0  w-full">
-    <img src="/image/Frame 5018.svg" alt="" className='w-full h-[477px] lg:mt-20 mt-0' />
+    <img src="/image/Frame 5018.svg" alt="" className='lg:pl-40 w-[600px] h-[477px] lg:mt-20 mt-0' />
   </div>
 
   <div>
-    <p className='lg:mt-50 mt-0  gap-15 font-semibold text-[#1E1E4B] text-4xl ml-3'>
+    <p className='lg:mt-30 ml-2 mt-0  pr-50 font-semibold text-[#1E1E4B] text-4xl '>
       Accept and sell appointments
     </p>
-    <p className='ml-1 mt-2 text-[#656565]'>
+    <p className=' ml-2 mt-2 text-[#656565]'>
       Let customers book their own appointment or consultation.<br />
       Start accepting payments for appointments through <br />
       your booking page.

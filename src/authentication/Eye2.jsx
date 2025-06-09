@@ -5,10 +5,10 @@ const Eye2 = ({ password, setPassword, error }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="relative mx-auto max-w-[400px]">
+    <div className="relative mx-auto max-w-[600px]">
       <input
         type={showPassword ? 'text' : 'password'}
-        className="w-full h-[60px] mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E7EAF1]"
+        className="w-full h-[60px] mt-3 bg-[#F8FAFD] px-4 py-2 border-[#E7EAF1] rounded-lg border-2 "
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />

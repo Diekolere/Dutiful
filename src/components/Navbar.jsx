@@ -1,10 +1,14 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function NavBar() {
+  const location = useLocation();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [loggedUser, setLoggedUser] = useState(null);
+
+  const hideIconPaths = ['/login', '/signup', '/sent', '/reset' , '/confirm', '/forgot'];
+  const shouldHideSearchIcon = hideIconPaths.includes(location.pathname);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage.getItem('user')) {
@@ -17,9 +21,18 @@ export default function NavBar() {
   return (
     <div className="bg-white flex gap-15 items-center justify-between px-4 py-2 relative">
       <div className="flex items-center gap-4">
-        <img src="/image/Group 65.png" alt="Dutiful Logo" className="ml-4 mt-2" />
-        <img src="/image/Search.png" alt="Search-icon" className="h-[40px] mt-4 ml-4 lg:block hidden" />
-        <ul className="lg:flex gap-20 mt-8  ml-15 text-base text-[#686868] font-bold hidden">
+        <img src="/image/Group 65.svg" alt="Dutiful Logo" className="ml-10 mt-2" />
+
+        {/*  Search icon is hidden on /login and /signup pages */}
+        {!shouldHideSearchIcon && (
+          <img
+            src="/image/Search.png"
+            alt="Search-icon"
+            className="h-[40px] mt-4 pl-44 lg:block hidden"
+          />
+        )}
+
+        <ul className="lg:flex gap-18 mt-8 ml-15 text-base text-[#686868] hidden">
           <li><Link to="/business">Business Directory</Link></li>
           <li><Link to="/feature">Features</Link></li>
           <li><Link to="/feature">Pricing</Link></li>
@@ -43,7 +56,7 @@ export default function NavBar() {
         </div>
       ) : (
         <ul className="lg:flex gap-15 hidden">
-          <li className="mt-8 text-[#1E1E4B] font-bold"><Link to="/login">Login</Link></li>
+          <li className="mt-9 text-[#1E1E4B] font-bold lg:text-xl text-2xl"><Link to="/login">Login</Link></li>
           <li>
             <Link
               to="/signup"
@@ -88,7 +101,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {isNavOpen && (
-        <div className="fixed inset-0 z-40 bg-black/70">
+        <div className="fixed  inset-0 z-40 bg-black/70">
           <div className="ml-auto h-full w-4/5 bg-[#532F82] py-24 px-6 animate-slide-in-left rounded-t-4xl">
             {loggedUser && (
               <p className="text-lg font-medium text-[#686868] mb-4">
@@ -101,7 +114,7 @@ export default function NavBar() {
             <Link to="/feature" className="block py-2 mt-6 text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
               Features
             </Link>
-            <Link to="/feature" className="block py-2 mt-6  text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
+            <Link to="/feature" className="block py-2 mt-6 text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
               Pricing
             </Link>
             <Link to="/home" className="block py-2 mt-6 text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
@@ -115,17 +128,17 @@ export default function NavBar() {
                     setLoggedUser(null);
                     return localStorage.clear();
                   }}
-                  className="btn-secondary  "
+                  className="btn-secondary"
                 >
                   Logout
                 </button>
               </div>
             ) : (
               <div className="mt-6 flex flex-col gap-y-4">
-                <Link to="/login" className=" border-gray-50 border-2 hover:bg-[#c8b0ce] rounded-md  w-55 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
+                <Link to="/login" className="border-gray-50 border-2 hover:bg-[#c8b0ce] rounded-md w-55 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
                   Login
                 </Link>
-                <Link to="/signup" className=" border-gray-50 border-2 rounded-md  hover:bg-[#c8b0ce] w-55  h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
+                <Link to="/signup" className="border-gray-50 border-2 rounded-md hover:bg-[#c8b0ce] w-55 h-15 pt-3 text-center text-[#c8b0ce] font-semibold" onClick={() => setIsNavOpen(false)}>
                   Sign up
                 </Link>
               </div>
